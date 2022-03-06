@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { cityApi } from '../../api/City';
-import Home from '../../components/home/Home';
+import { cityApi } from '../api/City';
+import Home from '../components/home/Home';
 
 const HomePage: React.FC = () => {
   const [cityInfo, setCityInfo] = useState<any>();

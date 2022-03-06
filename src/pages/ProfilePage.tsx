@@ -1,9 +1,9 @@
 import { Grid } from '@mui/material';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { cityApi } from '../../api/City';
-import Profile from '../../components/profile/Profile';
-import useAuth from '../../hooks/UseAuth';
+import { cityApi } from '../api/City';
+import Profile from '../components/profile/Profile';
+import useAuth from '../hooks/UseAuth';
 
 const ProfilePage: React.FC = () => {
   const { logged, user } = useAuth();
