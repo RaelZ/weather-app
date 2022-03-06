@@ -38,7 +38,6 @@ const Profile: React.FC<TProfile> = (props) => {
                 <CityInfo cityInfo={city} />
               </Grid>
               {city.forecast
-                .filter((day) => city.forecast.indexOf(day) !== 0)
                 .map((day) => (
                   <Grid key={day.date} px={1}>
                     <MiniCityInfo {...day} />

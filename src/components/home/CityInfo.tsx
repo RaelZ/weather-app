@@ -120,19 +120,6 @@ const CityInfo: FC<TCityInfo> = ({ cityInfo }) => {
               {humidity}m³
             </Typography>
           </Grid>
-          <Grid
-            py={2}
-            display="flex"
-            justifyContent="space-between"
-            width="100%"
-          >
-            <Typography fontSize={24} textOverflow="ellipsis" overflow="hidden">
-              Min: {forecast[0].min}ºc
-            </Typography>
-            <Typography fontSize={24} textOverflow="ellipsis" overflow="hidden">
-              Max: {forecast[0].max}ºc
-            </Typography>
-          </Grid>
         </Grid>
         <Grid
           item

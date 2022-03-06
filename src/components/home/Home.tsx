@@ -53,6 +53,16 @@ const Home: React.FC<THome> = ({ cityInfo, name, setName }) => {
               display="flex"
               justifyContent="center"
             >
+              {cityInfo && <MiniCityInfo {...cityInfo.forecast[0]} />}
+            </Grid>
+            <Grid
+              item
+              lg={6}
+              md={6}
+              sm={12}
+              display="flex"
+              justifyContent="center"
+            >
               {cityInfo && <MiniCityInfo {...cityInfo.forecast[1]} />}
             </Grid>
             <Grid
@@ -74,16 +84,6 @@ const Home: React.FC<THome> = ({ cityInfo, name, setName }) => {
               justifyContent="center"
             >
               {cityInfo && <MiniCityInfo {...cityInfo.forecast[3]} />}
-            </Grid>
-            <Grid
-              item
-              lg={6}
-              md={6}
-              sm={12}
-              display="flex"
-              justifyContent="center"
-            >
-              {cityInfo && <MiniCityInfo {...cityInfo.forecast[4]} />}
             </Grid>
           </Grid>
         </Grid>
