@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import type { FC } from 'react';
 import { Divider, Grid, Typography } from '@mui/material';
 import { TCityInfo } from '../../types/TCityInfo';
